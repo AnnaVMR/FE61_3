@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+  
+body {
+  font-family: Arial,Helvetica,sans-serif;
+  background-color: #ffffff;
+  background-size: 100%;
+  background-image: url(./src/images/cover.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+  
+.wrapper {
+  width: 100%;
+  max-width: 1120px;
+  box-sizing: content-box;
+  margin: 0 auto; 
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0 100px 0;
+  background: transparent; 
+}
+
+.header span {
+  font-size: 70pt;
+  font-size: 700;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #565186ec;
+}
+
+.buttonDiv {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  text-decoration: none;
+  margin-top: 100px;
+}
+
+.buttonDiv p{
+  color:#ffffff;
+  text-shadow: 2px 2px 4px #565186ec;
+  font-size: 20pt;
+  font-weight: 700;
+}
+
+.buttonDiv button{
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 25px;
+  margin: 0 60px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+}
+
+.btn span{
+  position: absolute;
+  display: block;
+}
+
+.btn span:nth-child(1){
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffffff);
+      animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+  0%{
+      left: -100%;
+  }
+  50%, 100%{
+      left: 100%;
+  }
+}
+
+.btn span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #ffffff);
+      animation: animate2 1s linear infinite;
+      animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+  0%{
+      top: -100%;
+  }
+  50%, 100%{
+      top: 100%;
+  }
+}
+
+.btn span:nth-child(3){
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #ffffff);
+      animation: animate3 1s linear infinite;
+      animation-delay: 0.50s;
+}
+
+@keyframes animate3 {
+  0%{
+      right: -100%;
+  }
+  50%, 100%{
+      right: 100%;
+  }
+}
+
+.btn span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #ffffff);
+      animation: animate4 1s linear infinite;
+      animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+  0%{
+      bottom: -100%;
+  }
+  50%, 100%{
+      bottom: 100%;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.content{
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardList{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 30px rgba(42, 76, 143, 0.726);
+  padding: 24px;
+  margin: 10px 0 10px 0; 
+  font-size: 16px;
+  font-weight: 300;
+  background-color: #ffffff;
+}
+
+.logoNamePrice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px 0 4px;
+  width: 40%;
+}
+
+.logoNamePrice p {
+  font-size: 16pt;
+  font-weight: 500;
+  margin: 16px 0 24px 0;
+  color: #1a1a41;
+}
+
+.logoNamePrice img {
+  width: 400px;
+}
+
+.logoNamePrice button {
+  background-color: transparent;
+  text-shadow: 1px 1px 2px #565186ec;
+  color: #1a1a41;
+  font-size: 16pt;
+  font-weight: 400;
+  letter-spacing: 4px;
+  padding: 16px 14px 16px 14px;
+  border: 1px solid #ffffff;
+  box-shadow: 1px 1px 1px 2px #565186ec;
+}
+
+.cardInfoStyle{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  max-width: 800px;
+  width: 60%;
+  margin: 14px 14px 0 0;
+}
+
+.cardInfoStyle span{
+  color: #1a1a41;
+  font-size: 20pt;
+  font-weight: 400;
+  margin: 10px 0 10px 0;
+}
+
+.cardInfoStyle div{
+  color: #1a1a41;
+  font-size: 14pt;
+  font-weight: 300;
+  margin: 0 0 10px 0;
+}
+
+.cardInfoStyle div p {
+  font-size: 16pt;
+  font-weight: 500;
+  color: #000005;
+  margin-bottom: 10px;
+}
