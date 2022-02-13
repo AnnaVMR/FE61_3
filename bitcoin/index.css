@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+margin: 0;
+}
+
+.currency {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.currency p {
+  font-size: 20pt;
+  font-weight: 500;
+  color: rgb(99, 40, 53);
+  margin: 20px 0 10px 0;
+}
+
+.buttons {
+  border: 1px solid rgba(255, 99, 132, 0.4);
+  background: transparent;
+  color:rgb(99, 40, 53);
+  padding: 10px 6px 10px 6px;
+  margin: 10px 20px 20px 20px;
+  font-size: 12pt;
+  font-weight: 400;
+}
+
+.buttons :nth-first-child{
+  margin-left: 0;
+}
